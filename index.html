@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel App</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!--NAVBAR-->
+    <nav class="navbar navbar-expand-md fixed-top opacity-75 bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="images/Travel-Logo.jpg" class="logo-img" width="80px" height="60px" style="border-radius: 50%;" alt="">
+
+          <a class="navbar-brand home-title" href="#" style="border-right:2px solid black ;padding:0 10px;">Tours Travel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active text-info"  href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-info" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Trips
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Cairo</a></li>
+                  <li><a class="dropdown-item" href="#">AlEX</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">ASWAN</a></li>
+                  <li><a class="dropdown-item" href="#">LUXOR</a></li>
+                  <li><a class="dropdown-item" href="#">SHARM ELSHIKH</a></li>
+                  <li><a class="dropdown-item" href="#">DAHAB</a></li>
+                  <li><a class="dropdown-item" href="#">MORE</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="#">About</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-info text-light" type="submit" style="margin:0 0px;">Search</button>
+               <button class="btn btn-info text-light"  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap" style="margin-left:25px;">Login</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--/NAVBAR-->
+      <!--================================================================-->
+      <!--MODAL-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-info">
+              <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Login</h1>
+              <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="inputEmail3" class="col-form-label text-info">Email Address</label>
+                  <input type="email" class="form-control" id="inputEmail3">
+                  <p>We'll never share your email with anyone else.</p>
+                </div>
+                <div class="mb-3">
+                  <label for="inputPassword3" class="col-form-label text-info">Password:</label>
+                  <input type="password" class="form-control" id="inputPassword3">
+                </div>
+                <div class="form-check form-switch mb-3 ml-5">
+                  <input class="form-check-input bg-info" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                  <label class="form-check-label" for="flexSwitchCheckChecked">Remember me</label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-info text-light">Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!--/MODAL-->
+  <!--================================================================-->
+       <!--HOME-->
+     <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 3"></button>
+     
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/egypt-cairo-pyramids-and-camels.jpg" class="d-block w-100"style="height: 550px;"alt="...">
+      <!-- <div class="overlay"> -->
+        <div class="carousel-caption  d-md-block  mb-5">
+          <h3>GIZA</h3>
+          <p>Some representative placeholder content for the first slide.</p>
+          <button type="button" class="btn btn-info text-light">Visit Us</button>
+        </div>
+      <!-- </div> -->
+      
+    </div>
+    <div class="carousel-item">
+      <img src="images/egypt-luxor-temple-of-karnak.jpg" class="d-block w-100" style="height: 550px;" alt="...">
+      <!-- <div class="overlay"> -->
+        <div class="carousel-caption  d-md-block   mb-5">
+          <h5>LUXOR</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+          <button type="button" class="btn btn-info text-light">Visit Us</button>
+        </div>
+      <!-- </div>  -->
+    </div>
+    <div class="carousel-item">
+      <img src="images/egypt-alexandria-facade-of-the-bibliotheca-alexandrina.jpg" class="d-block w-100" style="height: 550px;" alt="...">
+      <!-- <div class="overlay"> -->
+        <div class="carousel-caption  d-md-block    mb-5">
+          <h5>ALEXANDRIA</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+          <button type="button" class="btn btn-info text-light">Visit Us</button>
+        </div>
+      <!-- </div>  -->
+    </div>
+    <div class="carousel-item">
+      <img src="images/5eff48_a82e7adfee3f43e7a8486ca1854c99cb~mv2.jpg" class="d-block w-100" style="height: 550px;" alt="...">
+      <!-- <div class="overlay"> -->
+        <div class="carousel-caption  d-md-block   mb-5">
+          <h5>ASWAN</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+          <button type="button" class="btn btn-info text-light">Visit Us</button>
+        </div>
+      <!-- </div>  -->
+    </div>
+    <div class="carousel-item">
+      <img src="images/5eff48_23670b0012db43fd8fb52848c59f9fb5~mv2.jpg" class="d-block w-100" style="height: 550px;" alt="...">
+      <!-- <div class="overlay"> -->
+        <div class="carousel-caption d-md-block  mb-5">
+          <h5 class="fw-bold">SHARM ELSHIKH</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+          <button type="button" class="btn btn-info text-light ">Visit Us</button>
+        </div>
+      <!-- </div>  -->
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<ul class="Scroll-icons">
+<li><a href="https://facebook.com"><i class="fa-brands fa-square-facebook Scroll-icon"></i></a></li>
+<li><a href="https://whatsapp.com"> <i class="fa-brands fa-square-whatsapp Scroll-icon"></i></a></li>
+<li><a href="https://instagram.com"><i class="fa-brands fa-square-instagram Scroll-icon"></i></a></li>
+<li><a href="https://twitter.com"><i class="fa-brands fa-square-twitter Scroll-icon"></i></a></li>
+<li><a href="https://linkedin.com"><i class="fa-brands fa-linkedin Scroll-icon"></i></a></li>
+</ul>
+       <!--/HOME-->
+       <hr>
+  <!--=========================================================-->
+      <!--Welcome-card-->
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body welcome-card">
+              <h4 class="welcome-title">Welcome</h4>
+              <p class="welcome-desc text-light">
+                Are you planning to visit Egypt? We ultimate tour in Egypt,covering Cairo,alex.
+                From one day trip to 10 days dream vacation,we will take care of all your needs hotels 24/7 Customer Services . </p>
+                <button class="btn btn-info text-light" href="#" type="button">Learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/Welcome-card-->
+      <hr>
+      <!--popular-card-->
+      <div class="row">
+        <div class="col-12">
+          <!-- <div class="card"> -->
+            <div class="popular-card">
+              <h2 class="text-center text-light">Popular distinations in Egypt</h2>
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
+      <!--/popular-card-->
+      <!--=======================================================-->
+      <!--Collapsible Set-->
+    <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+             GIZA CITY
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse shadow p-3 mb-5 bg-body-tertiary rounded" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              LUXOR CITY
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse shadow p-3 mb-5 bg-body-tertiary rounded" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+             SINAI CITY
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse shadow p-3 mb-5 bg-body-tertiary rounded" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+          </div>
+        </div>
+      </div>
+      </div>
+ <!--/Collapsible Set-->
+       <hr>
+       <!--====================================================-->
+       <!--translate-cards-->
+       <div class="row-md">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body welcome-card">
+              <h3 class="text-center text-light">Translate from Arabic To English</h3>
+              <h5 style="margin: 10px 40px;">Write and Translate <span>Press here</span></h5>
+              <button class="btn btn-outline-success" style="margin-bottom: 10px;" onclick="myFunction()"> Copy </button>
+              <textarea class="form-control w-75"id="myInput" style="height: 100px;" placeholder="....."id="floatingTextarea">translate:</textarea>   
+            </div>
+          </div>
+        </div>
+       </div>
+       <div class="row mt-4">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body welcome-card">
+              <h3 class="text-center text-light">Translate from Arabic To French</h3>
+              <h5 style="margin: 10px 40px;">Write and Translate <span>Press here</span></h5>
+              <button class="btn btn-outline-success" style="margin-bottom: 10px;"onclick="myFunction()"> Copy </button>
+              <textarea class="form-control w-75"id="myInput" style="height: 100px;" placeholder="....."    id="floatingTextarea">translate:</textarea>
+            </div>
+          </div>
+        </div>
+       </div>
+       <div class="row mt-4">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body welcome-card">
+              <h3 class="text-center text-light">Translate from Arabic To German</h3>
+              <h5 style="margin: 10px 40px;">Write and Translate <span>Press here</span></h5>
+              <button class="btn btn-outline-success" style="margin-bottom: 10px;"onclick="myFunction()"> Copy </button>
+              <textarea class="form-control w-75"id="myInput" style="height: 100px;" placeholder="....."id="floatingTextarea">translate:</textarea> 
+            </div>
+          </div>
+        </div>
+       </div>
+       <!--/translate-cards-->
+      <hr>
+        <!--egyptian-temple-->
+          <section>
+            <div class="egyptian-temples-1 col-md-12">
+              <div class="egyptian-temples-overlay"></div>
+            </div>
+          </section>
+        <!--/egyptian-temple-->
+        <!--distinations-cards-->
+        <section>
+          <div class="row mt-4">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body distinations-cards">
+                  <h3 class="popular-title text-center">POPULAR DISTINATIONS IN EGYPT</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container p-2 mt-4">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mt-4 dist-card">
+                  <img src="images/sphinx-1175827_640.jpg" class="card-img-top object-fit-none border rounded" alt="...." width="290" height="280">
+                  <div class="card-body"> 
+                    <div class="card-text mt-4">
+                      <h6 style="display: inline;">GIZA</h6><a href="" class="btn btn-info text-light" style="margin: 0 10px;">Know more</a>
+                    </div>
+                    <p>city description</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mt-4 dist-card">
+                  <img src="images/egypt-sharm-el-sheikh-ras-mohammed-national-park.jpg" class="card-img-top object-fit-none border rounded" alt="...." width="290" height="280">
+                  <div class="card-body">
+                    <div class="card-text mt-4">
+                      <h6 style="display: inline;">SharmelSheikh</h6>
+                      <a href="" class="btn btn-info text-light" style="margin: 0 10px;">Know more</a>
+                      <p>city description</p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mt-4 dist-card">
+                  <img src="images/5eff48_fe638c8e827945bda054308aa0f46014~mv2.jpg"class="card-img-top object-fit-none border rounded" alt="...." width="290" height="280">
+
+                  <div class="card-body">
+                    <div class="card-text mt-4 dist-card">
+                      <h6 style="display: inline;">ASWAN</h6><a href="" class="btn btn-info text-light" style="margin: 0 10px;">Know more</a>
+                    </div>
+                    <p>city description</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-4">
+                <div class="card mt-4 dist-card">
+                  <img src="images/75.jpg"class="card-img-top object-fit-none border rounded" alt="...." width="290" height="280">
+
+                  <div class="card-body">
+                    <div class="card-text mt-4 dist-card">
+                      <h6 style="display: inline;">DAHAB</h6><a href="" class="btn btn-info text-light" style="margin: 0 10px;">Know more</a>
+                    </div>
+                    <p>city description</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mt-4 dist-card">
+                  <img src="images/egypt-alexandria-fort-qaitbey.jpg"class="card-img-top  border rounded" alt="...." width="290" height="280">
+
+                  <div class="card-body">
+                    <div class="card-text mt-4">
+                      <h6 style="display: inline-flex;">Alexandria</h6><a href="" class="btn btn-info text-light" style="margin: 0 10px;">Know more</a>
+                    </div>
+                    <p>city description</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mt-4 dist-card">
+                  <img src="images/egypt-luxor-temple-of-karnak.jpg"class="card-img-top object-fit-none border rounded" alt="...." width="290" height="280">
+
+                  <div class="card-body">
+                    <div class="card-text mt-4">
+                      <h6 style="display: inline;">Luxor</h6><a href="" class="btn btn-info text-light" style="margin: 0 10px;">Know more</a>
+                    </div>
+                    <p>city description</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!--/container-->
+        </section>
+        <!--/distinations-cards-->
+          <!--egyptian-temple-->
+          <section>
+            <div class="egyptian-temples-2 mt-4">
+              <!-- <div class="egyptian-temples-overlay"></div> -->
+            </div>
+          </section>
+        <!--/egyptian-temple-->
+        <hr>
+        <!--Thanks-->   
+          <div class="row mt-4">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="text-center thanks-card">
+                  <h4 class="thanks-text text-center">THANKS FOR</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/Thanks-->
+          <!-- thanks-cards -->
+          <section class="team">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 mt-3">
+                  <div class="card team-card card-has-bg click-col" style="background-image: url(./images/temp-1.jpg);">
+                    <img src="./images/temp-1.jpg"class="card-img d-none" alt="">
+                    <div class="card-img-overlay d-flex flex-column">
+                      <div class="card-body">
+                        <small class="card-meta mb-2 text-light">Thanks LeaderShip</small>
+                        <h4 class="card-title mt-0"><a class="text-light text-decoration-none" href="">Web Development</a></h4>
+                        <small class="text-light"><i class="far fa-clock text-light"></i> October 15, 2020</small>
+                      </div>
+                      <div class="card-footer border-top-0">
+                        <div class="media">
+                          <img class="mr-3 rounded-circle" src="./images/temp-1.jpg" alt="">
+                          <div class="media-body">
+                            <h6 class="my-0 text-light d-block">shimaa</h6>
+                            <small class="text-light">Director of UI/UX</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-3">
+                  <div class="card team-card card-has-bg click-col" style="background-image: url(./images/temp-22.jpg);">
+                    <img src="./images/temp-22.jpg"class="card-img d-none" alt="">
+                    <div class="card-img-overlay d-flex flex-column">
+                      <div class="card-body">
+                        <small class="card-meta mb-2 text-light">Thanks LeaderShip</small>
+                        <h4 class="card-title mt-0"><a class="text-light text-decoration-none" href="">Web Development</a></h4>
+                        <small class="text-light" ><i class="far fa-clock text-light"></i> October 15, 2020</small> 
+                      </div>
+                      <div class="card-footer border-top-0">
+                        <div class="media">
+                          <img class="mr-3 rounded-circle" src="./images/temp-22.jpg" alt="">
+                          <div class="media-body">
+                            <h6 class="my-0 text-light d-block">shimaa</h6>
+                            <small class="text-light">Director of UI/UX</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        
+                  </div>
+                </div>
+                <div class="col-md-4 mt-3">
+                  <div class="card team-card card-has-bg click-col" style="background-image: url(./images/temp-3.jpg);">
+                    <img src="./images/temp-3.jpg"class="card-img d-none" alt="">
+                    <div class="card-img-overlay d-flex flex-column">
+                      <div class="card-body">
+                        <small class="card-meta mb-2 text-light">Thanks LeaderShip</small>
+                        <h4 class="card-title mt-0"><a class="text-light text-decoration-none" href="">Web Development</a></h4>
+                        <small class="text-light"><i class="far fa-clock text-light"></i> October 15, 2020</small>
+        
+                      </div>
+                      <div class="card-footer border-top-0">
+                        <div class="media">
+                          <img class="mr-3 rounded-circle" src="./images/temp-3.jpg" alt="">
+                          <div class="media-body">
+                            <h6 class="my-0 text-light d-block">shimaa</h6>
+                            <small class="text-light">Director of UI/UX</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </section>
+         <!-- thanks-cards -->
+         <hr>
+        <!--NEWS-->
+        <section class="news">
+          <h4 class="news-text text-center mt-3">Egypt NEWS</h4>
+          <div class="container d-flex  mt-4"> 
+            <div class="card mt-4 shadow p-3 mb-5 bg-body-tertiary rounded">    
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/5eff48_19ff9dfe291f458185b14c6bbfdc9e3c~mv2.png" 
+                   alt="" width="300" class="card-img" height="400">
+                </div><!--/col-->
+                <div class="col-md-8">
+                  <div class="card-body ml-5">
+                    <h3 class="card-title pod-title text-primary">Podcast Title</h3>
+                    <span><i class="fa-regular fa-calendar-days"></i> sunday , oct 1st 2023</span>
+                    <p class="line2"></p>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Assumenda nulla facere adipisci soluta, quas perferendis corrupti nesciunt 
+                     maxime dicta impedit id vitae suscipit et! Fuga omnis ut ex harum consequuntur
+                      voluptate praesentium. Aliquid,
+                     aperiam? Rem numquam est non? In, eius!</p>
+                    
+                      <a href="" class="btn btn-outline-primary p-1 my-5 text-dark"><i class="fa fa-play" aria-hidden="true"></i> Play Episode</a>
+                      <a href="" class="btn btn-outline-success p-1 my-5 text-dark"> <i class="fa fa-clock" aria-hidden="true"></i> 55 min</a>
+                      <a href="" class="btn btn-outline-warning p-1 my-5 text-dark"> <i class="fa fa-tag" aria-hidden="true"></i> Podcast</a>         
+                  </div>
+                </div>
+              </div><!--/row-->
+            </div><!--card-->
+          </div><!--/container-->
+         <!-- ============================================== -->
+         <div class="container d-flex flex-row-reverse  mt-4">
+          <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+            <div class="row g-0">
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title pod-title text-primary">Podcast Title</h3>
+                  <span><i class="fa-regular fa-calendar-days"></i> sunday , oct 1st 2023</span>
+                <p class="line2"></p>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                   Assumenda nulla facere adipisci soluta, quas perferendis corrupti nesciunt 
+                   maxime dicta impedit id vitae suscipit et! Fuga omnis ut ex harum consequuntur
+                    voluptate praesentium. Aliquid,
+                   aperiam? Rem numquam est non? In, eius!</p>
+                   <a href="" class="btn btn-outline-primary p-1 my-5 text-dark"><i class="fa fa-play" aria-hidden="true"></i> Play Episode</a>
+                   <a href="" class="btn btn-outline-success p-1 my-5 text-dark"> <i class="fa fa-clock" aria-hidden="true"></i> 55 min</a>
+                   <a href="" class="btn btn-outline-warning p-1 my-5 text-dark"> <i class="fa fa-tag" aria-hidden="true"></i> Podcast</a>
+                </div>
+               
+              </div>
+              <div class="col-md-4">
+                <img src="images/5eff48_a82e7adfee3f43e7a8486ca1854c99cb~mv2.jpg"
+                 width="300" height="400" class="card-img img2" alt="">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+         <!-- ============================================== -->
+          <div class="container d-flex mt-4"> 
+            <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">    
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/luxor-4862455_1280.jpg" 
+                   alt="" width="300" class="card-img" height="400">
+                </div><!--/col-->
+                <div class="col-md-8">
+                  <div class="card-body ml-5">
+                    <h3 class="card-title pod-title text-primary">Podcast Title</h3>
+                    <span><i class="fa-regular fa-calendar-days"></i> sunday , oct 1st 2023</span>
+                    <p class="line2"></p>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Assumenda nulla facere adipisci soluta, quas perferendis corrupti nesciunt 
+                     maxime dicta impedit id vitae suscipit et! Fuga omnis ut ex harum consequuntur
+                      voluptate praesentium. Aliquid,
+                     aperiam? Rem numquam est non? In, eius!</p>
+                    
+                      <a href="" class="btn btn-outline-primary p-1 my-5 text-dark"><i class="fa fa-play" aria-hidden="true"></i> Play Episode</a>
+                      <a href="" class="btn btn-outline-success p-1 my-5 text-dark"> <i class="fa fa-clock" aria-hidden="true"></i> 55 min</a>
+                      <a href="" class="btn btn-outline-warning p-1 my-5 text-dark"> <i class="fa fa-tag" aria-hidden="true"></i> Podcast</a>
+                             
+                  </div>
+                </div>
+              </div><!--/row-->
+            </div><!--card-->
+          </div><!--/container-->
+           <!-- ========================================================== -->
+           <div class="container d-flex flex-row-reverse mt-4">
+            <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title pod-title text-primary">Podcast Title</h3>
+                    <span><i class="fa-regular fa-calendar-days"></i> sunday , oct 1st 2023</span>
+                  <p class="line2"></p>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Assumenda nulla facere adipisci soluta, quas perferendis corrupti nesciunt 
+                     maxime dicta impedit id vitae suscipit et! Fuga omnis ut ex harum consequuntur
+                      voluptate praesentium. Aliquid,
+                     aperiam? Rem numquam est non? In, eius!</p>
+                     <a href="" class="btn btn-outline-primary p-1 my-5 text-dark"><i class="fa fa-play" aria-hidden="true"></i> Play Episode</a>
+                     <a href="" class="btn btn-outline-success p-1 my-5 text-dark"> <i class="fa fa-clock" aria-hidden="true"></i> 55 min</a>
+                     <a href="" class="btn btn-outline-warning p-1 my-5 text-dark"> <i class="fa fa-tag" aria-hidden="true"></i> Podcast</a>
+                  </div>   
+                </div>
+                <div class="col-md-4">
+                  <img src="images/5eff48_73ed98debb9b415caa143a68ec327c7a~mv2.jpg"
+                   width="300" height="400" class="card-img img2" alt="">
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+         <!--/NEWS-->
+
+         <!--JOINUS-->
+         <section class="join-us my-4">
+          <h4 class="news-text text-center">JOIN US</h4>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 my-4">
+                <div class="card w-100 h-100 p-2 join-card shadow p-3 mb-5 bg-body-tertiary rounded">
+                   <p class="join-title title1 text-center fw-bold">Follow</p>
+                   <i class="fa-brands fa-twitter icon i-one"></i>
+                   <a href="https://twitter.com"class="text-center text-decoration-none fw-bold">Twitter</a>
+                </div>
+              </div>
+              <div class="col-md-3 my-4">
+                <div class="card w-100 h-100 p-2 join-card shadow p-3 mb-5 bg-body-tertiary rounded">
+                  <p class="join-title title2 text-center fw-bold">Contact us</p>
+                  <i class="fa-brands fa-whatsapp icon i-two"></i>
+                  <a href="https://whatsapp.com" class="text-center text-decoration-none fw-bold">Whatsapp</a>
+                </div>
+              </div>
+              <div class="col-md-3 my-4">
+                <div class="card w-100 h-100 p-2 join-card shadow p-3 mb-5 bg-body-tertiary rounded">
+                  <p class="join-title title3 text-center fw-bold">Join us</p>
+                  <i class="fa-brands fa-facebook icon i-three"></i>
+                  <a href="https://facebook.com" class="text-center text-decoration-none fw-bold ">Facebook</a>
+                </div>
+              </div>        
+              <div class="col-md-3 my-4">
+                <div class="card w-100 h-100 p-2 join-card shadow p-3 mb-5 bg-body-tertiary rounded">
+                  <p class="join-title titl4 text-center fw-bold">Follow us</p>
+                <i class="fa-brands fa-instagram icon i-four"></i>
+                <a href="https://instagram.com" class="text-center text-decoration-none fw-bold">Instagram</a>
+                </div>
+              </div>
+            </div>
+           </div>
+         </section>
+         <!--/JOINUS-->
+
+         <!--FOOTER-->
+         <footer class="footer">
+          <hr>
+          <div class="container mt-4">
+           
+            <div class="row">
+              <hr>
+              <div class="col-md-4">
+                <img src="images/logo2.jpg" alt="" width="100" height="100" style="border-radius: 50%;">
+                <span class="text-center">contact us</span>
+                <hr>
+                <ul class="list-group list-group-light">
+                  <li class="list-group-item px-3 border-0">Tele : 000-00-89</li>
+                  <li class="list-group-item px-3 border-0">Address : EGYPT</li>
+                  <li class="list-group-item px-3 border-0">Fax : 000-000-000</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <img src="images/logo2.jpg" alt="" width="100" height="100" style="border-radius: 50%;">
+               <span class="text-center"> follow us </span>
+               <hr>
+               <ul class="list-group list-group-light">
+               
+                <li class="list-group-item px-3 border-0"><a href="" class="text-decoration-none text-dark foot-link">visit us</a></li>
+                <li class="list-group-item px-3 border-0"><a href="" class="text-decoration-none text-dark foot-link">Take Look</a></li>
+                <li class="list-group-item px-3 border-0"><a href="" class="text-decoration-none text-dark foot-link">Your health is more important</a></li>
+                
+              </ul>
+              </div>
+              <div class="col-md-4">
+                <img src="images/logo2.jpg" alt="" width="100" height="100" style="border-radius: 50%;">
+                <span class="text-center">our community</span>
+                <hr>
+                <ul class="list-group list-group-light">
+                 
+                  <li class="list-group-item px-3 border-0">Services for all</li>
+                  <li class="list-group-item px-3 border-0">Provide best services</li>
+                  <li class="list-group-item px-3 border-0">you will better than before</li>
+                  
+                </ul>
+              </div>
+            </div>
+            <!-- <img src="images/logo2.jpg" alt="" width="100" height="100" style="border-radius: 50%;"> -->
+          </div>
+          <hr>
+          <div class="end-footer">
+            <h4 class="text-center copy-text">COPYRIGHT &copy; TOURS TRAVEL . GOOD COMANY. ALLRIGHTS</h4>
+          </div>
+          <hr>
+         </footer>
+         <!--/FOOTER-->
+
+       <script src="js/all.min.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.js.map"></script>
+        <script src="js/script.js"></script>
+
+</body>
+</html>
