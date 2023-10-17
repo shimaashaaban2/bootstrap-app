@@ -11,9 +11,54 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css.map">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="m-0">
   <!--NAVBAR-->
-    <nav class="navbar navbar-expand-md fixed-top opacity-75 bg-body-tertiary">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top opacity-75 bg-body-tertiary" auto-fill>
+      <div class="container-fluid">
+          <img src="images/Travel-Logo.jpg" class="logo-img" width="80px" height="60px" style="border-radius: 50%;" alt="">
+
+        <a class="navbar-brand home-title" href="#" style="border-right:2px solid black ;padding:0 10px;">Tours Travel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-info"  href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-info" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Trips
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Cairo</a></li>
+                <li><a class="dropdown-item" href="#">AlEX</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">ASWAN</a></li>
+                <li><a class="dropdown-item" href="#">LUXOR</a></li>
+                <li><a class="dropdown-item" href="#">SHARM ELSHIKH</a></li>
+                <li><a class="dropdown-item" href="#">DAHAB</a></li>
+                <li><a class="dropdown-item" href="#">MORE</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#">About</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-info text-light" type="submit" style="margin:0 0px;">Search</button>
+             <button class="btn btn-info text-light"  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap" style="margin-left:25px;">Login</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+    <!-- <nav class="navbar navbar-expand-md fixed-top opacity-75 bg-body-tertiary" auto-fill>
         <div class="container-fluid">
             <img src="images/Travel-Logo.jpg" class="logo-img" width="80px" height="60px" style="border-radius: 50%;" alt="">
 
@@ -55,7 +100,7 @@
             </form>
           </div>
         </div>
-      </nav>
+      </nav> -->
       <!--/NAVBAR-->
       <!--================================================================-->
       <!--MODAL-->
@@ -93,7 +138,7 @@
        <!--/MODAL-->
   <!--================================================================-->
        <!--HOME-->
-     <div id="carouselExampleCaptions" class="carousel slide">
+     <div id="carouselExampleCaptions" class="carousel slide" auto-fill>
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -165,7 +210,7 @@
   </button>
 </div>
 
-<ul class="Scroll-icons">
+<ul class="Scroll-icons fixed-top d-flex flex-column"dir="ltr">
 <li><a href="https://facebook.com"><i class="fa-brands fa-square-facebook Scroll-icon"></i></a></li>
 <li><a href="https://whatsapp.com"> <i class="fa-brands fa-square-whatsapp Scroll-icon"></i></a></li>
 <li><a href="https://instagram.com"><i class="fa-brands fa-square-instagram Scroll-icon"></i></a></li>
@@ -176,19 +221,22 @@
        <hr>
   <!--=========================================================-->
       <!--Welcome-card-->
-      <div class="row">
-        <div class="col-12">
-          <div class="card">
-            <div class="card-body welcome-card">
-              <h4 class="welcome-title">Welcome</h4>
-              <p class="welcome-desc text-light">
-                Are you planning to visit Egypt? We ultimate tour in Egypt,covering Cairo,alex.
-                From one day trip to 10 days dream vacation,we will take care of all your needs hotels 24/7 Customer Services . </p>
-                <button class="btn btn-info text-light" href="#" type="button">Learn more</button>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body welcome-card">
+                <h4 class="welcome-title">Welcome</h4>
+                <p class="welcome-desc text-light">
+                  Are you planning to visit Egypt? We ultimate tour in Egypt,covering Cairo,alex.
+                  From one day trip to 10 days dream vacation,we will take care of all your needs hotels 24/7 Customer Services . </p>
+                  <button class="btn btn-info text-light" href="#" type="button">Learn more</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      
       <!--/Welcome-card-->
       <hr>
       <!--popular-card-->
@@ -305,7 +353,8 @@
                   <img src="images/sphinx-1175827_640.jpg" class="card-img-top object-fit-none border rounded" alt="...." width="290" height="280">
                   <div class="card-body"> 
                     <div class="card-text mt-4">
-                      <h6 style="display: inline;">GIZA</h6><a href="" class="btn btn-info text-light" style="margin: 0 10px;">Know more</a>
+                      <h6 style="display: inline;">GIZA</h6>
+                      <a href="" class="btn btn-info text-light" style="margin: 0 28px;">Know more</a>
                     </div>
                     <p>city description</p>
                   </div>
@@ -317,7 +366,7 @@
                   <div class="card-body">
                     <div class="card-text mt-4">
                       <h6 style="display: inline;">SharmelSheikh</h6>
-                      <a href="" class="btn btn-info text-light" style="margin: 0 10px;">Know more</a>
+                      <a href="" class="btn btn-info text-light" style="margin: 0 28px;">Know more</a>
                       <p>city description</p>
                     </div>
                     
@@ -330,7 +379,8 @@
 
                   <div class="card-body">
                     <div class="card-text mt-4 dist-card">
-                      <h6 style="display: inline;">ASWAN</h6><a href="" class="btn btn-info text-light" style="margin: 0 10px;">Know more</a>
+                      <h6 style="display: inline;">ASWAN</h6>
+                      <a href="" class="btn btn-info text-light" style="margin: 0 28px;">Know more</a>
                     </div>
                     <p>city description</p>
                   </div>
@@ -344,7 +394,8 @@
 
                   <div class="card-body">
                     <div class="card-text mt-4 dist-card">
-                      <h6 style="display: inline;">DAHAB</h6><a href="" class="btn btn-info text-light" style="margin: 0 10px;">Know more</a>
+                      <h6 style="display: inline;">DAHAB</h6>
+                      <a href="" class="btn btn-info text-light" style="margin: 0 28px;">Know more</a>
                     </div>
                     <p>city description</p>
                   </div>
@@ -356,7 +407,8 @@
 
                   <div class="card-body">
                     <div class="card-text mt-4">
-                      <h6 style="display: inline-flex;">Alexandria</h6><a href="" class="btn btn-info text-light" style="margin: 0 10px;">Know more</a>
+                      <h6 style="display: inline-flex;">Alexandria</h6>
+                      <a href="" class="btn btn-info text-light" style="margin: 0 28px;">Know more</a>
                     </div>
                     <p>city description</p>
                   </div>
@@ -368,7 +420,8 @@
 
                   <div class="card-body">
                     <div class="card-text mt-4">
-                      <h6 style="display: inline;">Luxor</h6><a href="" class="btn btn-info text-light" style="margin: 0 10px;">Know more</a>
+                      <h6 style="display: inline;">Luxor</h6>
+                      <a href="" class="btn btn-info text-light" style="margin: 0 28px;">Know more</a>
                     </div>
                     <p>city description</p>
                   </div>
