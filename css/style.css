@@ -1,8 +1,8 @@
 
 *{
-    box-sizing: border-box; 
-     padding: 0;
-    margin: 0; 
+    /* box-sizing: border-box;  */
+     /* padding: 0;
+    margin: 0;  */
 }
 body{
     height: 3000px;
@@ -25,11 +25,11 @@ body{
 	-webkit-text-fill-color: transparent;
     font-weight: bold;
 }
-.home-img{
+/* .home-img{
     position: relative;
-}
+} */
 
-.carousel-caption{
+/* .carousel-caption{
     width: 65%;
     height: 120px;
     position: absolute;
@@ -43,11 +43,11 @@ body{
     background-color:  #40a9ff8c;
     height: 180px !important;
     top:70%;
-}
+} */
 /* ======================================================================*/
 .Scroll-icons{
     z-index: 10;
-    transform: translate(80%,14%);
+    transform: translate(84%,14%);
     top: 176px;
 }
 
@@ -74,19 +74,19 @@ body{
     height: 45px;
     padding: 7px 8px;
 }
-.dropdown-toggle:first-letter:after{
+/* .dropdown-toggle:first-letter:after{
     font-size: 100%;
     color: red;
   }
   .dropdown-toggle:first-letter:hover::after{
     font-size: 100%;
     color: red;
-  }
+  } */
 
-.dropdown-menu{
+/* .dropdown-menu{
     background-color: aliceblue;
     opacity: 1; 
-}
+} */
 .dropdown-item{
     font-weight: 600;
     color: rgb(82, 82, 161);
@@ -105,14 +105,14 @@ body{
     background-color: aliceblue;
     opacity:0.8;
 }
-.popular-card{
+/* .popular-card{
     background-color: rgba(87, 124, 124, 0.9);
     height: 105px;
     padding-top: 20px;
-}
+} */
 .translate-card{
     background-color: rgba(129, 185, 185, 0.9);
-    width: 110%;
+    /* width: 110%; */
 }
 
   .accordion-button{
@@ -140,7 +140,7 @@ body{
     width: 100%;
     position: relative;
     background-image:url('../images/abu-simbel-600667_1280.jpg');
-    height: 350px;
+    /* height: 350px; */
     background-size: cover;
     background-attachment: fixed;
   }
@@ -226,66 +226,7 @@ body{
     padding-top: 20px;
 }
 
-.card-team:hover{
-transition:   0.5s ease;
- transform:scale(1.1);
-}
-.thank-card:hover{
-    transition:   0.5s ease;
- transform:scale(1.1);
-}
- .one{ 
-    /* position: relative; */
-    background-image: url('../images/Team-22.jpg');
-    background-size: cover;
-    /* height: 350px;
-    width: 300px; */
-    /* background-size: cover; */
-    /* height: 350px; */
-    /* width: 300px;   */
-}
- .two{ 
-    /* position: relative; */
-    background-image: url('../images/temple-79441_1280.jpg');
-    background-size: cover;
-    /* height: 350px;
-    width: 300px; */
-    /* background-size: cover; */
-    /* height: 350px; */
-    /* width: 300px;   */
-}
- .three{ 
-    /* position: relative; */
-    background-image: url('../images/5eff48_104ce4c374b34d8bb0a2f274bc7e9e9a~mv2.jpg');
-    background-size: cover;
-    /* height: 350px;
-    width: 300px; */
-    /* background-size: cover; */
-    /* height: 350px; */
-    /* width: 300px;   */
-}
 
-.card-team h3{
-    color: #fff;
-}
-.card-team span{
-    color: aliceblue;
-    font-weight: 700;
-}
-.card-team p{
-    color: aliceblue;
-    font-weight: 800;
-}
-.card-team img {
-    position: absolute;
-    top: 238px;
-    left: 29px;
-    width: 74px;
-    height: 80px;
-    border-radius: 50%;
-    border: 2px solid white;
-}
- 
  .line{
     width: 75px;
     height: 4px;
@@ -310,8 +251,7 @@ transition:   0.5s ease;
     background-color: #000;
     border-radius: 14px;
     margin: auto;
-    width: 50%;
-    padding: 10px;
+    padding: 15px; 
 }
 .join-title{
     font-size: 25px;
@@ -480,5 +420,10 @@ transition: 0.2s;
     .card-img{
         clip-path: none;
 
+    }
+    .Scroll-icons{
+        z-index: 10;
+        transform: translate(80%,14%);
+        top: 176px;
     }
   }
